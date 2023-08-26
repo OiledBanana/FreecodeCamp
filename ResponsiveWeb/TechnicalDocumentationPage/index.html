@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="styles.css">
+    <title>Java Documentation</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Java Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Getting_Started_With_Java">Getting Started With Java </a></li>
+            <li><a class="nav-link" href="#Java_Entry_Point">Java Entry Point</a></li>
+            <li><a class="nav-link" href="#Printing_to_the_console">Printing to the console</a></li>
+            <li><a class="nav-link" href="#Declaring_Functions">Declaring Functions</a></li>
+            <li><a class="nav-link" href="#Object_Oriented_Programming">Object Oriented Programming</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Getting_Started_With_Java">
+            <header>Getting Started With Java </header>
+            <p> Steps in getting started</p>
+            <ol>
+                <li>Download Java</li>
+                <li>Download Java SDK</li>
+                <li>Get an Integrated Development Environment|IDE</li>
+                <li>Start a project within IDE</li>
+                <li>Create "    Hello World" code</li>
+            </ol>
+        </section>
+        <section class="main-section" id ="Java_Entry_Point">
+            <header>Java Entry Point</header>
+            <p>The entry point of the a java application is the main function</p>
+            <p>
+                It is categorized by its(String[]args) as parameter for the function
+            </p>
+            <pre>
+                <code>
+                    public class MainFunction{
+                        /* Java main function*/
+                        public static void main(String[]args){
+
+                        }
+                    }
+                </code>
+            </pre>
+            <p>The main function is nested inside a class which is a standard in Java structure</p>
+            <p>
+                The name of the function is "MainFunction"
+            </p>
+        </section>
+        <section class="main-section" id ="Printing_to_the_console">
+            <header>Printing to the console</header>
+            <p>In order to print in to the console. We use System.out.print.ln</p>
+            <pre>
+                <code>
+                    public class MainFunction{
+                        /* Java main function*/
+                        public static void main(String[]args){
+                            System.out.print.ln("Hello World");
+
+                        }
+                    }
+                </code>
+            </pre>
+            <p>In this example we printed to the console Hello World.</p>
+        </section>
+        <section class="main-section" id="Declaring_Functions">
+            <header>Declaring Functions</header>
+            <p>
+                Functions in Java are called methods. Here is an example on how to declare a method.
+            </p>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/methods-in-java.png" alt ="Java method example">
+            <p>
+                Here is a copiable code. 
+            </p>
+            <pre>
+                <code>
+                    Public static void myFunction(String name, int age){
+                        //function code
+                    }
+                </code>
+            </pre>
+        </section>
+        <section class="main-section" id="Object_Oriented_Programming">
+            <header>Object Oriented Programming</header>
+            <p>Java is known as a Object Oriented Programming Language</p>
+            <p>
+                It means it is easy to represent objects by classes and encapsulation
+            </p>
+            <p>
+                Here is an example:
+            </p>
+                <pre>
+                    <code>
+                        
+                        // Car.java file
+                        // public class
+                        public class Car {
+                            // public variable
+                            public int tireCount;
+
+                            // public method
+                            public void display() {
+                                System.out.println("I am a Car.");
+                                System.out.println("I have " + tireCount + " tires.");
+                            }
+                        }
+
+                        // Main.java
+                        public class Main {
+                            public static void main( String[] args ) {
+                                // accessing the public class
+                                Car car = new Car();
+
+                                // accessing the public variable
+                                car.tireCount = 4;
+                                // accessing the public method
+                                car.display();
+                            }
+                        }
+                    </code>
+                </pre>
+                <p>The output of this code will be:</p>
+                <p class="output">
+                    I am a Car.
+
+                    I have 4 tires.
+                </p>
+                <p>Below is the syntax of an object in Java</p>
+                <pre>
+                    <code>
+                        public class Number {
+
+                            int y = 10;
+                            
+                            public static void main(String[] args) {
+                            
+                            Number myObj = new Number();
+                            
+                            System.out.println(myObj.y);
+                            
+                            }
+                            
+                            }
+                    </code>
+                </pre>
+        </section>
+        <section>
+            <footer>
+                <p>Documentation is brought to you by OiledBanana</p>
+            </footer>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
